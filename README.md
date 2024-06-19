@@ -38,3 +38,6 @@ sh translate_transformer.sh [SEED] [TRAIN_STEPS]
 You can use LSTM and Llama 2 similarly.
 
 Translation results will be generated in `results/[MODEL]/[SEED]/[TRAIN_STEPS]`.
+
+## License
+This repository is primarily licensed under MIT License, but `lora.py` is licensed under Apache License, Version 2.0.
