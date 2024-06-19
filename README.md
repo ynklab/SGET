@@ -40,4 +40,18 @@ You can use LSTM and Llama 2 similarly.
 Translation results will be generated in `results/[MODEL]/[SEED]/[TRAIN_STEPS]`.
 
 ## License
-This repository is primarily licensed under MIT License, but `lora.py` is licensed under Apache License, Version 2.0.
+This repository is primarily licensed under MIT License, but `scripts/lora.py` is licensed under Apache License, Version 2.0.
+
+<!-- ## Citation
+You can reference this work as follows:
+```
+@article{kumon-etal-2024-structural,
+    title = "Evaluating Structural Generalization in Neural Machine Translation",
+    author = "Kumon Ryoma and Matsuoka Daiki and Yanaka Hitomi",
+    year = "2024",
+
+}
+``` -->
+
+## Contact
+If you have any issues or questions, please contact [kumoryo9@is.s.u-tokyo.ac.jp](mailto:kumoryo9@is.s.u-tokyo.ac.jp)
