@@ -1,0 +1,9 @@
+nltk
+torch==2.1.0
+transformers
+datasets
+peft
+accelerate
+bitsandbytes
+numpy==1.26.4
+OpenNMT-py==3.4.3

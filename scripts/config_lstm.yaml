@@ -1,0 +1,74 @@
+## Where the samples will be written
+save_data: ../data/run/model_lstm
+# Where the vocab(s) will be written
+src_vocab: ../data/run/model_lstm.vocab.src
+tgt_vocab: ../data/run/model_lstm.vocab.tgt
+# Prevent overwriting existing files in the folder
+overwrite: True
+
+# Corpus opts:
+data:
+    corpus_1:
+        path_src: ../data/bpe/train_en_encoded_sp.txt
+        path_tgt: ../data/bpe/train_ja_encoded_sp.txt
+    valid:
+        path_src: ../data/bpe/dev_en_encoded_sp.txt
+        path_tgt: ../data/bpe/dev_ja_encoded_sp.txt
+
+# Vocabulary files that were just created
+src_vocab: ../data/run/model_lstm.vocab.src
+tgt_vocab: ../data/run/model_lstm.vocab.tgt
+
+seed: [SEED]
+# Train on a single GPU
+world_size: 1
+gpu_ranks: [0]
+
+# Where to save the checkpoints
+save_model: ../models/LSTM/[SEED]/checkpoints/model
+log_file: ../models/LSTM/[SEED]/logs/model
+save_checkpoint_steps: 1000
+valid_steps: 500
+train_steps: 70000
+
+# Batching
+batch_type: "sents"
+normalization: "sents"
+batch_size: 256
+valid_batch_size: 256
+accum_count: [4]
+accum_steps: [0]
+valid_metircs: ["bleu"]
+# Optimization
+model_dtype: "fp16"
+optim: "adam"
+learning_rate: 0.0001
+max_grad_norm: 0
+param_init: 0
+param_init_glorot: true
+
+# Model
+encoder_type: rnn
+decoder_type: rnn
+rnn_type: LSTM
+global_attention: dot
+max_relative_positions: 20
+enc_layers: 4
+dec_layers: 4
+heads: 8
+hidden_size: 512
+word_vec_size: 512
+transformer_ff: 2048
+dropout_steps: [0]
+dropout: [0.1]
+optim: adam
+
+# Data
+avg_tok_min: 0
+avg_tok_max: 192
+upper_corpus_ratio: 0.0
+penn: False
+same_char: False
+same_word: False
+src_tgt_ratio: 10
+max_context: 0
