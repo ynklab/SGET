@@ -45,11 +45,22 @@ This repository is primarily licensed under MIT License, but `scripts/lora.py` i
 ## Citation
 You can reference this work as follows:
 ```
-@article{kumon-etal-2024-structural,
-    title = {Evaluating Structural Generalization in Neural Machine Translation},
-    author = {Kumon, Ryoma and Matsuoka, Daiki and Yanaka, Hitomi},
-    journal={arXiv preprint arXiv:2406.13363},
-    year = {2024},
+@inproceedings{kumon-etal-2024-evaluating,
+    title = "Evaluating Structural Generalization in Neural Machine Translation",
+    author = "Kumon, Ryoma  and
+      Matsuoka, Daiki  and
+      Yanaka, Hitomi",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2024",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-acl.783/",
+    doi = "10.18653/v1/2024.findings-acl.783",
+    pages = "13220--13239",
 }
 ```
 
